@@ -3,7 +3,7 @@ logging:
   level: INFO  # 日志级别: DEBUG, INFO, WARNING, ERROR, CRITICAL
   retention_days: 7  # 日志保留天数
   dir: logs  # 日志目录
-  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"  # 日志格式
+  format: "%(asctime)s - %(name)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s"  # 日志格式
   file: app.log  # 日志文件名
 
 server:
