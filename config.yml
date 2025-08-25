@@ -7,5 +7,5 @@ logging:
   file: app.log  # 日志文件名
 
 server:
-  host: localhost
-  port: 8000
+  host: 0.0.0.0
+  port: 8009

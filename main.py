@@ -99,4 +99,8 @@ async def get_docs(query: str, library: str):
 
 if __name__ == "__main__":
     # mcp.run(transport="stdio")
-    mcp.run(transport="sse", host=yaml_config['server']['host'], port=yaml_config['server']['port'])
+    print(yaml_config)
+    mcp.settings.host = yaml_config['server']['host']
+    mcp.settings.port = yaml_config['server']['port']
+    # mcp.run(transport="streamable-http")
+    mcp.run(transport="sse")
